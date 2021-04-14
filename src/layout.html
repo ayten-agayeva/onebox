@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#FBF5E8">
+    <meta property="author" content="OneBox">
+    <title>OneBox</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="css/style.min.css?_t=1615752823548" rel="stylesheet">
+</head>
+<body>
+	<header id="header" class="if_not_logged">
+	  <div class="top">
+		<div class="container">
+			<div class="inner">
+				<div class="top_left">
+					<button class="open_mobile_menu"></button>
+					<a href="index.html" class="logo"><img src="images/logo.svg" /></a>
+					<ul>
+						<li><a href="*9878" title="*9878" class="hot_line">*9878</a></li>
+						<li><a href="">Daşınması qadağan olunan məhsullar</a></li>
+						<li><a href="">Tez-tez verilən suallar</a></li>
+					</ul>
+				</div>
+				<div class="top_right">
+					<ul>
+						<li><a href="login.html" class="log_in">Daxil ol</a></li>
+						<li><a href="register.html" class="sign_in">Qeydiyyat</a></li>
+						<li class="lang">
+							<span><img src="images/az-flag.svg" /><span class="icon"></span></span>
+							<ul>
+								<li><a class="hint--left hint--bounce" aria-label="Rusca"><img src="images/ru-flag.svg" /></a></li>
+								<li><a class="hint--left hint--bounce" aria-label="İngiliscə"><img src="images/us-flag.svg" /></a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="navbar_right mobile_side">
+						<a href="" class="shopping_cart"><span>0</span></a>
+						<a class="account open_popup" data-target=".account_popup"><img src="images/user.svg"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	  <div class="container navbar">
+		  <div class="row">
+			<div class="col-lg-4">
+				<a href="index.html" class="logo"><img src="images/logo.svg" /></a>
+			</div>
+			<div class="col-lg-8">
+				<nav>
+					<ul>
+						<li><a href="about.html" title="">Haqqımızda</a></li>
+						<li><a href="prices.html" title="">Tariflər</a></li>
+						<li><a href="services.html" title="">Xidmətlər</a></li>
+						<li><a href="contact.html" title="">Mağazalar</a></li>
+						<li><a href="contact.html" title="">Yeniliklər</a></li>
+						<li><a href="contact.html" title="">Əlaqə</a></li>
+						<li><a href="" class="shopping_cart"><span>0</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		  </div>
+	  </div>
+	 </header>
+	 {% block content %}{% endblock %}
+	<footer id="footer">
+		<div class="container">
+			<div class="top">
+				<a href="index.html" class="logo"><img src="images/f-logo.svg" /></a>
+				<ul class="social">
+					<li><a href="" class="facebook"></a></li>
+					<li><a href="" class="instagram"></a></li>
+					<li><a href="" class="youtube"></a></li>
+				</ul>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="">Tez-tez verilən suallar</a></li>
+					<li><a href="">Daşınması qadağan olunan məhsullar</a></li>
+					<li><a href="">Şərtlər</a></li>
+					<li><a href="">Gizlilik siyasəti</a></li>
+					<li><a href="">İstifadəçi razılaşması</a></li>
+				</ul>
+			</nav>
+			<ul class="f_contact">
+				<li class="location">Azərbaycan, Bakı şəh., AZ 1010, 28 May küç. 33</li>
+				<li class="email"><a href="mailto:info@onebox.az" title="info@onebox.az" class="email">info@onebox.az</a></li>
+				<li class="phone"><a href="050 265 5672" title="050 265 5672">050 265 5672</a></li>
+			</ul>
+			<div class="copy_right">
+				© 2021 <a href="">Koli Cargo</a>. Bütün hüquqlar qorunur
+			</div>
+		</div>
+	</footer>
+	<div class="mobile_menu mobile_popup">
+		<div class="popup_inner">
+			<div class=" container">
+				<div class="header">
+					<button class="close"></button>
+					<div class="lang">
+						<span>EN<span class="icon"></span></span>
+						<ul>
+							<li><a href="">AZ</a></li>
+							<li><a href="">RU</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<nav>
+				<div class="container">
+					<ul class="m_nav">
+						<li> <a href="#" class="m_nav_link">About us</a></li>
+						<li> <a href="#" class="m_nav_link">Prices</a></li>
+						<li> <a href="#" class="m_nav_link">Services</a></li>
+						<li> <a href="#" class="m_nav_link">Contact</a></li>
+					</ul>
+					<div class="m_footer">
+						<a href="" class="log_in">LOG IN</a>
+						<a href="" class="button btn_primary sign_in">REGISTER</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="bg_overlay"></div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+	<script src="js/vendor.min.js?_t=1615752823548"></script>
+	<script src="js/lang/jquery.validationEngine-en.js"></script>
+	<script src="js/script.min.js?_t=1615752823548"></script>
+	</body>
+</html>
