@@ -3,7 +3,7 @@ $(document).ready(() => {
 	$("select").select2({
 		minimumResultsForSearch: Infinity
 	  });
-
+	  
 	  $('.custom-select-search').select2({
         dropdownCssClass: 'select-search'
     });
@@ -195,6 +195,9 @@ $(document).ready(() => {
 			$(".account_popup").removeClass("active");
 			$("body").removeClass("disable_scroll");
 		});
+
+		$(".drop_menu").addClass("dropright");
+		$(".drop_menu").removeClass("dropup");
 	} 
 
 	if ($(".home_slider").length > 0) {
