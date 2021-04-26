@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+{% block content %}
+<main>
+	<section>
+        <div class="container contact">
+            <div class="w-960">
+                <div class="sec_title">
+                    <h1>Bizimlə əlaqə</h1>
+                    <span class="text o-5">Bizlə heç çəkinmədən əlaqə saxlayın, daim xidmətinizdəyik!</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-12">
+                        <div class="form">
+                            <form method="" class="validation" action="">
+                                <h4 class="contact_title">Bizə yazın</h4>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Name</label>
+                                            <input name="name" class="validate[required,minSize[6]]" type="text" placeholder="Adınızı daxil edin" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Soyad</label>
+                                            <input name="text" class="validate[required,minSize[6]]" type="text" placeholder="Soyadınızı daxil edin" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Telefon</label>
+                                            <input name="" class="validate[required]" data-mask="phone"  type="text" placeholder="(+994) __ ___ __ __" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Email</label>
+                                            <input name="" class="validate[required,minSize[6]]" type="text" placeholder="Emailinizi daxil edin" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label class="label">Mesaj</label>
+                                            <textarea placeholder="Təklif və şikayətiniz varsa çəkinmədən qeyd edin və göndərin"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <button type="button" class="button btn_primary">Göndər</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <h4 class="contact_title">Əlaqə məlumatlarımız</h4>
+                        <div class="item">
+                            <span class="icon location"></span>
+                            <p class="text o-5">Azərbaycan, Bakı şəh., AZ 1010, 28 May küç. 33</p>
+                        </div>
+                        <div class="item">
+                            <span class="icon phone"></span>
+                            <p class="text o-5">050 546 7888   I   *9878z</p>
+                        </div>
+                        <div class="item">
+                            <span class="icon email"></span>
+                            <p class="text o-5">info@onebox.az <br/> start@onebox.az</p>
+                        </div>
+                        <h4 class="contact_title">İş saatları</h4>
+                        <div class="item">
+                            <span class="icon clock"></span>
+                            <p class="text o-5">Həftəiçi: 10:00 - 19:00 <br/> Həftəsonu: 11:00 - 16:00</p>
+                        </div>
+                        <h4 class="contact_title">Bizi izləyin</h4>
+                        <ul class="social">
+                            <li><a href="" class="icon facebook"></a></li>
+                            <li><a href="" class="icon instagram"></a></li>
+                            <li><a href="" class="icon youtube"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maps" id="map" data-lat="40.40327402207969" data-lng="49.87138129215863"></div>
+    </section>
+</main>
+{% endblock %}

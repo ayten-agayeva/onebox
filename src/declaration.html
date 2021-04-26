@@ -1,0 +1,285 @@
+{% extends "logged-layout.html" %}
+{% block content %}
+<main>
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="side_menu">
+                    <div class="user">
+                        <div class="user_img">
+                            <img src="./images/usr.jpg">
+                        </div>
+                        <div class="user_info">
+                            <span class="title">Bella Hadid</span>
+                            <span class="desc"><span class="user_id">ID: </span>OB386477</span>
+                        </div>
+                    </div>
+                    <a href="" class="button btn_primary full">Bəyan et</a>
+                    <ul>
+                        <li><a href="" title="" class="active">Xaricdəki ünvanlarım</a></li>
+                        <li><a href="" title="">Bağlamalarım</a></li>
+                        <li><a href="" title="">Sifarişlərim</a></li>
+                        <li><a href="" title="">Borclar</a></li>
+                        <li><a href="" title="">Balans</a></li>
+                        <li><a href="" title="">Ailə hesabı</a></li>
+                        <li><a href="" title="">Etibarnamələr</a></li>
+                        <li><a href="" title="">Kuryer sifarişi</a></li>
+                        <li class="settings"><a href="" title="">Ayarlar</a></li>
+                        <li><a href="" title="">Çıxış</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="account_top_fix">
+                    <a href="" class="item limit">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Bu ay üzrə limit</label>
+                            <span class="desc">$ 123.00</span>
+                        </div>
+                    </a>
+                    <a href="" class="item order">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Sifariş balansım</label>
+                            <span class="desc">₺ 4567.89</span>
+                        </div>
+                    </a>
+                    <a href="" class="item transport">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Daşınma balansım</label>
+                            <span class="desc">$ 20.50</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="right_content_wrap">
+                    <div class="sec_title">
+                        <h1>Öncədən bəyan et</h1>
+                    </div>
+                    <div class="form">
+                        <form>
+                            <div class="right_content">
+                                <div class="tabs_flex tab_with_label with_label_two">
+                                    <ul class="tabs tabs1" data-target=".list_tab">
+                                        <li class="active"><a class="tr"><span class="tab_title">Türkiyə</span></a></li>
+                                        <li><a class="us"><span class="tab_title">ABŞ</span></a></li>
+                                        <li><a class="chine"><span class="tab_title">Çin</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="list_tab tabs_content">
+                                    <div class="active list_content" data-match-height=".item">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-12">
+                                                <div class="form-group">
+                                                    <label class="label">Tracking ID</label>
+                                                    <input name="" class="validate[required]" type="text" placeholder="Tracking ID daxil edin" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="multiselect">
+                                                    <label class="label">Mağaza adı</label>
+                                                    <select class="custom-select-search" data-placeholder="Mağazanı seçin">
+                                                        <option></option>
+                                                        <option value="0">Addax</option>
+                                                        <option value="1">Adidas</option>
+                                                        <option value="2">ADL</option>
+                                                        <option value="3">Akakçe</option>
+                                                        <option value="4">Aldo</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-12">
+                                                <div class="multiselect">
+                                                    <label class="label">Kateqoriya</label>
+                                                    <select class="custom-select" multiple="multiple">
+                                                        <option value="0">Geyim</option>
+                                                        <option value="1">Ayaqqabı</option>
+                                                        <option value="2">Aksesuar</option>
+                                                    </select>
+                                                    <span class="select_icon"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="form-group">
+                                                    <label class="label">Məhsulun qiyməti</label>
+                                                    <input class="form-control" type="text" placeholder="0.00" />
+                                                    <span class="input_desc">TL</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="upload_invoice">
+                                            <div class="fine-uploader-gallery"></div>
+                                        </div>
+                                        <div class="product_item_btm text-end">
+                                            <a href="" class="button btn_secondary_gray">Ləğv et</a>
+                                            <a href="" class="button btn_primary ml-16">Etibarnamə yarat</a>
+                                        </div>
+                                    </div>
+                                    <div data-match-height=".item" class="list_content">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-12">
+                                                <div class="form-group">
+                                                    <label class="label">Tracking ID</label>
+                                                    <input name="" class="validate[required]" type="text" placeholder="Tracking ID daxil edin" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="multiselect">
+                                                    <label class="label">Mağaza adı</label>
+                                                    <select class="custom-select-search" data-placeholder="Mağazanı seçin">
+                                                        <option></option>
+                                                        <option value="0">Addax</option>
+                                                        <option value="1">Adidas</option>
+                                                        <option value="2">ADL</option>
+                                                        <option value="3">Akakçe</option>
+                                                        <option value="4">Aldo</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-12">
+                                                <div class="multiselect">
+                                                    <label class="label">Kateqoriya</label>
+                                                    <select class="custom-select" multiple="multiple">
+                                                        <option value="0">Geyim</option>
+                                                        <option value="1">Ayaqqabı</option>
+                                                        <option value="2">Aksesuar</option>
+                                                    </select>
+                                                    <span class="select_icon"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="form-group">
+                                                    <label class="label">Məhsulun qiyməti</label>
+                                                    <input class="form-control" type="text" placeholder="0.00" />
+                                                    <span class="input_desc">TL</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="upload_invoice">
+                                            <div class="fine-uploader-gallery"></div>
+                                        </div>
+                                        <div class="product_item_btm text-end">
+                                            <a href="" class="button btn_secondary_gray">Ləğv et</a>
+                                            <a href="" class="button btn_primary ml-16">Etibarnamə yarat</a>
+                                        </div>
+                                    </div>
+                                    <div data-match-height=".item" class="list_content">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-12">
+                                                <div class="form-group">
+                                                    <label class="label">Tracking ID</label>
+                                                    <input name="" class="validate[required]" type="text" placeholder="Tracking ID daxil edin" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="multiselect">
+                                                    <label class="label">Mağaza adı</label>
+                                                    <select class="custom-select-search" data-placeholder="Mağazanı seçin">
+                                                        <option></option>
+                                                        <option value="0">Addax</option>
+                                                        <option value="1">Adidas</option>
+                                                        <option value="2">ADL</option>
+                                                        <option value="3">Akakçe</option>
+                                                        <option value="4">Aldo</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-12">
+                                                <div class="multiselect">
+                                                    <label class="label">Kateqoriya</label>
+                                                    <select class="custom-select" multiple="multiple">
+                                                        <option value="0">Geyim</option>
+                                                        <option value="1">Ayaqqabı</option>
+                                                        <option value="2">Aksesuar</option>
+                                                    </select>
+                                                    <span class="select_icon"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="form-group">
+                                                    <label class="label">Məhsulun qiyməti</label>
+                                                    <input class="form-control" type="text" placeholder="0.00" />
+                                                    <span class="input_desc">TL</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="upload_invoice">
+                                            <div class="fine-uploader-gallery"></div>
+                                        </div>
+                                        <div class="product_item_btm text-end">
+                                            <a href="" class="button btn_secondary_gray">Ləğv et</a>
+                                            <a href="" class="button btn_primary ml-16">Etibarnamə yarat</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script type="text/template" id="qq-template-gallery">
+    <div class="qq-uploader-selector qq-uploader qq-gallery drag-drop account-form-file" qq-drop-area-text="">
+        <div class="invoys_upload_box invoys_upload_box_c">
+            <div class="qq-upload-drop-area-selector qq-upload-drop-area" qq-hide-dropzone>
+                <span class="qq-upload-drop-area-text-selector"></span>
+            </div>
+            <div class="qq-upload-button-selector choose_file"><span class="download_icon"></span></div>
+            <div class="before-upload-content">
+                <p>İnvoys faylını yüklə </p>
+                <p class="upload_note full">Qəbul edilən fayllar: .pdf, .jpg, .png</span></p>
+            </div>
+
+            <div class="in_error_note d-none">
+                <p class="error_file_note">Yüklədiyiniz faylın formatı düzgün deyil</p>
+            </div>
+
+            <ul class="qq-upload-list-selector qq-upload-list img-list" role="region" aria-live="polite" aria-relevant="additions removals">
+                <li class="invoys_filename">
+                    <div class="qq-file-name">
+                        <span class="qq-upload-file-selector qq-upload-file"></span>
+                        <span class="qq-edit-filename-icon-selector qq-edit-filename-icon" aria-label="Edit filename"></span>
+                        <button type="button" class="qq-btn qq-upload-cancel-selector qq-upload-cancel"></button>
+                    </div>
+                </li>
+            </ul>
+            <span class="qq-drop-processing-selector qq-drop-processing">
+                <span>Processing dropped files...</span>
+                <span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>
+            </span>
+        </div>
+        <dialog class="qq-alert-dialog-selector">
+            <div class="qq-dialog-message-selector"></div>
+            <div class="qq-dialog-buttons">
+                <button type="button" class="qq-cancel-button-selector">Bağla</button>
+            </div>
+        </dialog>
+
+        <dialog class="qq-confirm-dialog-selector">
+            <div class="qq-dialog-message-selector"></div>
+            <div class="qq-dialog-buttons">
+                <button type="button" class="qq-cancel-button-selector">No</button>
+                <button type="button" class="qq-ok-button-selector">Yes</button>
+            </div>
+        </dialog>
+
+        <dialog class="qq-prompt-dialog-selector">
+            <div class="qq-dialog-message-selector"></div>
+            <input type="text">
+            <div class="qq-dialog-buttons">
+                <button type="button" class="qq-cancel-button-selector">Cancel</button>
+                <button type="button" class="qq-ok-button-selector">Ok</button>
+            </div>
+        </dialog>
+    </div>
+</script>
+{% endblock %}

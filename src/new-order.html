@@ -1,0 +1,245 @@
+{% extends "logged-layout.html" %}
+{% block content %}
+<main>
+    <section class="container new_order">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="side_menu">
+                    <div class="user">
+                        <div class="user_img">
+                            <img src="./images/usr.jpg">
+                        </div>
+                        <div class="user_info">
+                            <span class="title">Bella Hadid</span>
+                            <span class="desc"><span class="user_id">ID: </span>OB386477</span>
+                        </div>
+                    </div>
+                    <a href="" class="button btn_primary full">Bəyan et</a>
+                    <ul>
+                        <li><a href="" title="" class="active">Xaricdəki ünvanlarım</a></li>
+                        <li><a href="" title="">Bağlamalarım</a></li>
+                        <li><a href="" title="">Sifarişlərim</a></li>
+                        <li><a href="" title="">Borclar</a></li>
+                        <li><a href="" title="">Balans</a></li>
+                        <li><a href="" title="">Ailə hesabı</a></li>
+                        <li><a href="" title="">Etibarnamələr</a></li>
+                        <li><a href="" title="">Kuryer sifarişi</a></li>
+                        <li class="settings"><a href="" title="">Ayarlar</a></li>
+                        <li><a href="" title="">Çıxış</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="account_top_fix">
+                    <a href="" class="item limit">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Bu ay üzrə limit</label>
+                            <span class="desc">$ 123.00</span>
+                        </div>
+                    </a>
+                    <a href="" class="item order">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Sifariş balansım</label>
+                            <span class="desc">₺ 4567.89</span>
+                        </div>
+                    </a>
+                    <a href="" class="item transport">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Daşınma balansım</label>
+                            <span class="desc">$ 20.50</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="right_content_wrap">
+                    <div class="sec_title">
+                        <h1>Yeni sifariş</h1>
+                        <div class="text-end">
+                            <button class="video open_popup o-5" data-target=".video_instruction"><span>Video təlimat</span></button>
+                        </div>
+                    </div>
+                    <div class="right_content">
+                        <div class="form">
+                            <form>
+                                <div class="product_item">
+                                    <div class="item_header">
+                                        <div>
+                                            <span>#1</span>
+                                            <label>Məhsul</label>
+                                        </div>
+                                        <a class="button delete"></a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <div class="product_link">
+                                                    <label class="label">Məhsulun linki</label>
+                                                    <input type="text" class="form-control product_link" required="" />
+                                                    <a href="" class="open_new_link" target="_blank"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-12">
+                                            <div class="form-group">
+                                                <label class="label">Say</label>
+                                                <div class="number-spinner">
+                                                    <input type="text" class="pl-ns-value" max="20" min="0" value="0"/>
+                                                    <span class="ns-btn plus">
+                                                        <a data-dir="up" class="up"></a>
+                                                    </span>
+                                                    <span class="ns-btn minus">
+                                                        <a data-dir="dwn" class="dwn"></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-12">
+                                            <div class="form-group">
+                                                <label class="label">Məhsulun qiyməti</label>
+                                                <input class="form-control" type="text" placeholder="0.00" />
+                                                <span class="input_desc">TL</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-12">
+                                            <div class="form-group">
+                                                <label class="label">Karqo qiyməti</label>
+                                                <input class="form-control" type="text" placeholder="0.00" />
+                                                <span class="input_desc">TL</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label class="label">Rəng</label>
+                                                <input class="form-control" type="text" placeholder="Məhsulun rəngi" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label class="label">Ölçü</label>
+                                                <input class="form-control" type="text" placeholder="Məhsulun ölçüsü" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label class="label">Digər qeydlər</label>
+                                                <textarea placeholder="Əlavə qeydiniz varsa daxil edin"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="caption">
+                                                <p class="label o-5">Yekun qiymət (+5% komissiya)</p>
+                                                <p class="text">₺719.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_item">
+                                    <div class="item_header">
+                                        <div>
+                                            <span>#2</span>
+                                            <label>Məhsul</label>
+                                        </div>
+                                        <a class="button delete"></a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <div class="product_link">
+                                                    <label class="label">Məhsulun linki</label>
+                                                    <input type="text" class="form-control product_link" required="" />
+                                                    <a href="" class="open_new_link" target="_blank"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-12">
+                                            <div class="form-group">
+                                                <label class="label">Say</label>
+                                                <div class="number-spinner">
+                                                    <input type="text" class="pl-ns-value" max="20" min="0" value="0"/>
+                                                    <span class="ns-btn plus">
+                                                        <a data-dir="up" class="up"></a>
+                                                    </span>
+                                                    <span class="ns-btn minus">
+                                                        <a data-dir="dwn" class="dwn"></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-12">
+                                            <div class="form-group">
+                                                <label class="label">Məhsulun qiyməti</label>
+                                                <input class="form-control" type="text" placeholder="0.00" />
+                                                <span class="input_desc">TL</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-12">
+                                            <div class="form-group">
+                                                <label class="label">Karqo qiyməti</label>
+                                                <input class="form-control" type="text" placeholder="0.00" />
+                                                <span class="input_desc">TL</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label class="label">Rəng</label>
+                                                <input class="form-control" type="text" placeholder="Məhsulun rəngi" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label class="label">Ölçü</label>
+                                                <input class="form-control" type="text" placeholder="Məhsulun ölçüsü" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label class="label">Digər qeydlər</label>
+                                                <textarea placeholder="Əlavə qeydiniz varsa daxil edin"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="caption">
+                                                <p class="label o-5">Yekun qiymət (+5% komissiya)</p>
+                                                <p class="text">₺719.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_item_btm">
+                                    <a href="" class="button btn_secondary add_new full">Yeni məhsul əlavə et</a>
+                                    <div class="caption">
+                                        <p class="label o-5">Yekun qiymət (+5% komissiya)</p>
+                                        <p class="text">₺719.00</p>
+                                    </div>
+                                    <a href="" class="button btn_primary full">Ödənişi tamamla</a>
+                                    <div class="form_check">
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox-control"></span>
+                                            <span class="checkbox-label">Təcili sifariş ($2.00)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

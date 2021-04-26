@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#FBF5E8">
+    <meta property="author" content="OneBox">
+    <title>OneBox</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="css/style.min.css?_t=1615752823548" rel="stylesheet">
+</head>
+<body>
+    <main class="popups">
+        <div class="container">
+            <button class="button btn_primary mt-32 open_popup" data-target=".success_popup">Success</button>
+            <button class="button btn_primary mt-32 open_popup" data-target=".error_popup">Error</button>
+            <button class="button btn_primary mt-32 open_popup" data-target=".fin_popup">Passport</button>
+        </div>
+        <div class="popup success_popup popup_small">
+            <div class="popup_inner">
+                <button class="close visible_m"></button>
+                <span class="popup_icon"></span>
+                <div class="content">
+                    <h4 class="title color-green">Uğurla tamamlandı!</h4>
+                    <p class="text o-5">Şifrəni dəyişmək üçün təlimat email ünvanınıza göndərildi. Emailinizi yoxlayın</p>
+                    <button class="button btn_secondary_gray mt-32 close_btn m-full">Bağla</button>
+                </div>
+            </div>
+        </div>
+        <div class="popup error_popup popup_small">
+            <div class="popup_inner">
+                <button class="close visible_m"></button>
+                <span class="popup_icon"></span>
+                <div class="content">
+                    <h4 class="title color-pink">Xəta baş verdi!</h4>
+                    <p class="text o-5">Məlumatlara uyğun hər hansı bir hesab tapılmadı.</p>
+                    <button class="button btn_secondary_gray mt-32 close_btn m-full">Bağla</button>
+                </div>
+            </div>
+        </div>
+        <div class="popup fin_popup">
+            <div class="popup_inner popup_sm">
+                <button class="close"></button>
+                <div class="row content">
+                    <div class="col-12 col-lg-6">
+                        <img src="images/old-passport.png" />
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img src="images/new-passport.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCZWy2YH-P1SUd4wbCz4gteGoX3aXSd1c&amp;amp;libraries=places"></script>
+	<script src="js/vendor.min.js?_t=1615752823548"></script>
+	<script src="js/lang/jquery.validationEngine-en.js"></script>
+	<script src="js/script.min.js?_t=1615752823548"></script>
+	</body>
+</html>

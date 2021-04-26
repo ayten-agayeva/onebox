@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "logged-layout.html" %}
 {% block content %}
 <main>
     <section class="container addresses">
@@ -31,35 +31,27 @@
             </div>
             <div class="col-lg-9">
                 <div class="account_top_fix">
-                    <div class="row">
-                        <div class="col-6 col-md-4">
-                            <a href="" class="item limit">
-                                <div class="img"></div>
-                                <div>
-                                    <label class="o-5">Bu ay üzrə limit</label>
-                                    <span class="desc">$ 123.00</span>
-                                </div>
-                            </a>
+                    <a href="" class="item limit">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Bu ay üzrə limit</label>
+                            <span class="desc">$ 123.00</span>
                         </div>
-                        <div class="col-6 col-md-4">
-                            <a href="" class="item order">
-                                <div class="img"></div>
-                                <div>
-                                    <label class="o-5">Sifariş balansım</label>
-                                    <span class="desc">₺ 4567.89</span>
-                                </div>
-                            </a>
+                    </a>
+                    <a href="" class="item order">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Sifariş balansım</label>
+                            <span class="desc">₺ 4567.89</span>
                         </div>
-                        <div class="col-6 col-md-4">
-                            <a href="" class="item transport">
-                                <div class="img"></div>
-                                <div>
-                                    <label class="o-5">Daşınma balansım</label>
-                                    <span class="desc">$ 20.50</span>
-                                </div>
-                            </a>
+                    </a>
+                    <a href="" class="item transport">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Daşınma balansım</label>
+                            <span class="desc">$ 20.50</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="right_content_wrap">
                     <div class="sec_title">
@@ -159,10 +151,172 @@
                                 </div>
                             </div>
                             <div data-match-height=".item" class="list_content">
-                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>İsim Soyisim</label>
+                                            <span class="text">Erlich Bachman</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>İlçe / Semt</label>
+                                            <span class="text">Eyüp</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>İl (Şehir)</label>
+                                            <span class="text">İstanbul</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>District</label>
+                                            <span class="text">Adres başlığı</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="info_item">
+                                            <label>Adres satır 1</label>
+                                            <span class="text">Alibeyköy Mah. Atatürk Cd. No:135 D386477</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>Mahalle</label>
+                                            <span class="text">Alibeyköy Mah.</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>Cep numarası</label>
+                                            <span class="text">05435789980</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>Postal code</label>
+                                            <span class="text">34060</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>TC Kimlik</label>
+                                            <span class="text">28135930832</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="info_item">
+                                            <label>Teslim alan kişi</label>
+                                            <span class="text">Onebox Lojistik</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div data-match-height=".item" class="list_content">
-                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>İsim Soyisim</label>
+                                            <span class="text">Erlich Bachman</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>İlçe / Semt</label>
+                                            <span class="text">Eyüp</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>İl (Şehir)</label>
+                                            <span class="text">İstanbul</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>District</label>
+                                            <span class="text">Adres başlığı</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="info_item">
+                                            <label>Adres satır 1</label>
+                                            <span class="text">Alibeyköy Mah. Atatürk Cd. No:135 D386477</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>Mahalle</label>
+                                            <span class="text">Alibeyköy Mah.</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>Cep numarası</label>
+                                            <span class="text">05435789980</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>Postal code</label>
+                                            <span class="text">34060</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info_item">
+                                            <label>TC Kimlik</label>
+                                            <span class="text">28135930832</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="info_item">
+                                            <label>Teslim alan kişi</label>
+                                            <span class="text">Onebox Lojistik</span>
+                                            <button class="copy_btn" aria-label="Copied"></button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,274 @@
+{% extends "layout.html" %}
+{% block content %}
+<main>
+	<section>
+        <div class="container">
+            <div class="w-960">
+                <div class="sec_title">
+                    <h1>Qeydiyyatdan keç</h1>
+                    <span class="text o-5">Əgər hesabınız yoxdursa aşağıdakı məlumatları dolduraraq yeni hesab yaradın</span>
+                </div>
+                <div class="tabs_flex tab_with_label width-auto">
+                    <ul class="tabs tabs1" data-target=".tabs_content">
+                        <li class="active"><a><span class="tab_title">Fiziki şəxs</span></a></li>
+                        <li><a><span class="tab_title">Hüquqi şəxs</span></a></li>
+                    </ul>
+                </div>
+                <div class="tabs_content">
+                    <div class="active list_content" data-match-height=".item">
+                        <div class="form">
+                            <form method="post" class="validation" action="">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Ad</label>
+                                            <input name="name" class="validate[required]" type="text" placeholder="Adınızı daxil edin" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Soyad</label>
+                                            <input name="name" class="validate[required]" type="text" placeholder="Soyadınızı daxil edin" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Email</label>
+                                            <input name="email" class="validate[required,custom[email]]" type="email" placeholder="Emailinizi daxil edin" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group select-input">
+                                            <label class="label">Mobil nömrə</label>
+                                            <input name="" class="validate[required]" data-mask="phone"  type="text" placeholder="___ __ __" />
+                                            <div class="select_wrap">
+                                                <select>
+                                                    <option>050</option>
+                                                    <option>055</option>
+                                                    <option>070</option>
+                                                    <option>077</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Doğum tarixi</label>
+                                            <input name="" class="validate[required],minSize[6]] datepicker_h"  autocomplete="off" type="text" placeholder="Doğum tarixinizi seçin" data-toggle="datetimepicker" />
+                                            <span class="calendar"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="multiselect">
+                                            <label class="label">Vətəndaşlıq</label>
+                                            <select class="custom-select-search" data-placeholder="Vətəndaşlığınızı seçin">
+                                                <option></option>
+                                                <option value="0">Azərbaycan</option>
+                                                <option value="1">Rusya Federasiyası</option>
+                                                <option value="2">Amerika</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group select-input">
+                                            <label class="label">Şəxsiyyət Vəsiqəsinin nömrəsi</label>
+                                            <input name="" class="validate[required]" type="text" placeholder="12345678" />
+                                            <div class="select_wrap">
+                                                <select>
+                                                    <option>AZE</option>
+                                                    <option>AA</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">FİN kod</label>
+                                            <input name="" class="validate[required]" type="text" placeholder="FİN kodu daxil edin" />
+                                            <div class="fin"><span class="open_popup" data-target=".fin_popup"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="multiselect">
+                                            <label class="label">Şəhər</label>
+                                            <select class="custom-select-search" data-placeholder="Yaşadığınız şəhəri seçin">
+                                                <option></option>
+                                                <option value="0">Bakı</option>
+                                                <option value="1">Qax</option>
+                                                <option value="2">Şəki</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Ünvan</label>
+                                            <input name="" class="validate[required]" type="text" placeholder="Yaşadığınız ünvanı qeyd edin" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Şifrə</label>
+                                            <input name="password" class="validate[required,minSize[6]] password" type="password" placeholder="Şifrəni daxil edin" />
+                                            <div class="hide-show pass_visibility"><span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Təkrar şifrə</label>
+                                            <input name="password" class="validate[required,minSize[6]] password" type="password" placeholder="Şifrəni yenidən daxil edin" />
+                                            <div class="hide-show pass_visibility pass_confirm"><span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form_check">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span class="checkbox-control"></span>
+                                                <span class="checkbox-label"><a href="#" class="link">İstifadəçi şərtləri</a> ilə razıyam</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <button class="button video open_popup o-5" data-target=".video_instruction"><span>Video təlimat</span></button>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <button type="button" class="button btn_primary m-full btn_lg">Qeydiyyatı tamamla</button>
+                                </div>
+                                <div class="form_btm">
+                                    <h2>Artıq hesabınız var?</h2>
+                                    <button type="button" class="button btn_secondary m-full btn_lg">Hesaba daxil olun</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div data-match-height=".item" class="list_content">
+                        <div class="form">
+                            <form method="post" class="validation" action="">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Ad</label>
+                                            <input name="name" class="validate[required]" type="text" placeholder="Şirkətin adını qeyd edin" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">VÖEN</label>
+                                            <input name="name" class="validate[required]" type="text" placeholder="Şirkət VÖENini daxil edin" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Email</label>
+                                            <input name="email" class="validate[required,custom[email]]" type="email" placeholder="Emailinizi daxil edin" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group select-input">
+                                            <label class="label">Mobil nömrə</label>
+                                            <input name="" class="validate[required]" data-mask="phone"  type="text" placeholder="(+994) __ ___ __ __" />
+                                            <div class="select_wrap">
+                                                <select>
+                                                    <option>050</option>
+                                                    <option>055</option>
+                                                    <option>070</option>
+                                                    <option>077</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="multiselect">
+                                            <label class="label">Şəhər</label>
+                                            <select class="custom-select-search" data-placeholder="Yaşadığınız şəhəri seçin">
+                                                <option></option>
+                                                <option value="0">Bakı</option>
+                                                <option value="1">Qax</option>
+                                                <option value="2">Şəki</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Ünvan</label>
+                                            <input name="" class="validate[required]" type="text" placeholder="Yaşadığınız ünvanı qeyd edin" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Şifrə</label>
+                                            <input name="password" class="validate[required,minSize[6]] password" type="password" placeholder="Şifrəni daxil edin" />
+                                            <div class="hide-show pass_visibility"><span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="label">Təkrar şifrə</label>
+                                            <input name="password" class="validate[required,minSize[6]] password" type="password" placeholder="Şifrəni yenidən daxil edin" />
+                                            <div class="hide-show pass_visibility pass_confirm"><span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form_check">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span class="checkbox-control"></span>
+                                                <span class="checkbox-label"><a href="#" class="link">İstifadəçi şərtləri</a> ilə razıyam</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <button class="button video open_popup o-5" data-target=".video_instruction"><span>Video təlimat</span></button>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <button type="button" class="button btn_primary m-full btn_lg">Qeydiyyatı tamamla</button>
+                                </div>
+                                <div class="form_btm">
+                                    <h2>Artıq hesabınız var?</h2>
+                                    <button type="button" class="button btn_secondary m-full btn_lg">Hesaba daxil olun</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="popup fin_popup">
+        <div class="popup_inner popup_sm">
+            <button class="close"></button>
+            <div class="row content">
+                <div class="col-12 col-lg-6">
+                    <img src="images/old-passport.png" />
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="images/new-passport.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

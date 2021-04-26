@@ -50,7 +50,7 @@
     background: #33B6CC;
 }
 .qq-gallery .qq-upload-button-focus {
-    outline: 1px dotted #000000;
+    outline: 0;
 }
 
 
@@ -111,8 +111,9 @@
     border-radius: 4px;
 }
 .qq-gallery .qq-upload-list {
+    display: flex;
     margin: 0;
-    padding: 10px 0 0;
+    padding: 10px 0;
     list-style: none;
     max-height: 450px;
     overflow-y: auto;
@@ -124,23 +125,28 @@
 /* Uploaded Elements
 ------------------------------------------ */
 .qq-gallery .qq-upload-list li {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     position: relative;
-    max-width: 120px;
-    margin: 0 25px 25px 0;
-    padding: 0;
+    min-width: 196px;
+    margin: 0 25px 0 0;
+    padding: 12px;
     line-height: 16px;
     font-size: 13px;
     color: #424242;
-    background-color: #FFFFFF;
-    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.22);
     vertical-align: top;
-
-    /* to ensure consistent size of tiles - may need to change if qq-max-size attr on preview img changes */
-    height: 186px;
 }
-
+.qq-gallery .qq-upload-list li::before {
+        content: "";
+        height: 24px;
+		width: 24px;
+		display: inline-block;
+		background: url(../images/file.svg) center no-repeat;
+		margin-right: rem(12);
+}
 .qq-gallery .qq-upload-spinner,
 .qq-gallery .qq-upload-size,
 .qq-gallery .qq-upload-retry,
@@ -207,6 +213,7 @@
     top: -6px;
     margin: 0;
     line-height: 17px;
+    background: url(../images/closee.svg) center no-repeat #525252;
 }
 .qq-gallery .qq-upload-cancel:hover {
     background-color: #525252;
@@ -245,9 +252,8 @@
 }
 
 .qq-gallery .qq-upload-file {
-    display: block;
+    display: inline-block;
     margin-right: 0;
-    margin-bottom: 3px;
     width: auto;
 
     /* to ensure consistent size of tiles - constrain text to single line */

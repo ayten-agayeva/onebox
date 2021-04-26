@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block content %}
+<main>
+	<section>
+        <div class="container">
+            <div class="w-960">
+                <div class="sec_title">
+                    <h1>Hesaba daxil ol!</h1>
+                    <span class="text o-5">Hesabınıza giriş etmək üçün zəhmət olmasa emailnizi və şifrənizi daxil edin!</span>
+                </div>
+                <div class="form">
+                    <form method="" class="validation" action="">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label class="label">Email</label>
+                                    <input name="" class="validate[required,minSize[6]]" type="text" placeholder="Emailinizi daxil edin" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label class="label">Şifrə</label>
+                                    <input name="password" class="validate[required,minSize[6]] password" style="-webkit-text-security: square;" type="password" placeholder="Şifrənizi daxil edin" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group form_check">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox-control"></span>
+                                        <span class="checkbox-label">Məni yadda saxla</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <a href="forgot-your-password.html" class="forgot_password_link">Şifrəni unutmusan?</a>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <button type="button" class="button btn_primary m-full btn_lg">Daxil ol</button>
+                        </div>
+                        <div class="form_btm">
+                            <h2>Hələdə hesabınız yoxdur?</h2>
+                            <button type="button" class="button btn_secondary m-full btn_lg">Qeydiyyatdan keçin</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,140 @@
+{% extends "logged-layout.html" %}
+{% block content %}
+<main>
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="side_menu">
+                    <div class="user">
+                        <div class="user_img">
+                            <img src="./images/usr.jpg">
+                        </div>
+                        <div class="user_info">
+                            <span class="title">Bella Hadid</span>
+                            <span class="desc"><span class="user_id">ID: </span>OB386477</span>
+                        </div>
+                    </div>
+                    <a href="" class="button btn_primary full">Bəyan et</a>
+                    <ul>
+                        <li><a href="" title="" class="active">Xaricdəki ünvanlarım</a></li>
+                        <li><a href="" title="">Bağlamalarım</a></li>
+                        <li><a href="" title="">Sifarişlərim</a></li>
+                        <li><a href="" title="">Borclar</a></li>
+                        <li><a href="" title="">Balans</a></li>
+                        <li><a href="" title="">Ailə hesabı</a></li>
+                        <li><a href="" title="">Etibarnamələr</a></li>
+                        <li><a href="" title="">Kuryer sifarişi</a></li>
+                        <li class="settings"><a href="" title="">Ayarlar</a></li>
+                        <li><a href="" title="">Çıxış</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="account_top_fix">
+                    <a href="" class="item limit">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Bu ay üzrə limit</label>
+                            <span class="desc">$ 123.00</span>
+                        </div>
+                    </a>
+                    <a href="" class="item order">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Sifariş balansım</label>
+                            <span class="desc">₺ 4567.89</span>
+                        </div>
+                    </a>
+                    <a href="" class="item transport">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Daşınma balansım</label>
+                            <span class="desc">$ 20.50</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="right_content_wrap">
+                    <div class="sec_title">
+                        <h1>Yeni kuryer sifarişi</h1>
+                    </div>
+                    <div class="right_content">
+                        <div class="alert_item">
+                            <span class="img"></span>
+                            <div class="content">
+                                <p class="label">Qeyd</p>
+                                <p class="text o-5">Əziz müştəri, kuryer sifarişləri yalnız saat 08:00-dan 00:00-a qədər qəbul edilir.</p>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <form>
+                                <div class="product_item">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <div class="multiselect">
+                                                <label class="label">Bağlamalar</label>
+                                                <select class="custom-select" multiple="multiple">
+                                                    <option value="0">OB56782135</option>
+                                                    <option value="1">OB56782136</option>
+                                                    <option value="2">OB56782137</option>
+                                                    <option value="3">OB56782138</option>
+                                                    <option value="4">OB56782139</option>
+                                                </select>
+                                                <span class="select_icon"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-group select-input">
+                                                <label class="label">Mobil nömrə</label>
+                                                <input name="" class="validate[required]" data-mask="phone"  type="text" placeholder="___ __ __" />
+                                                <div class="select_wrap">
+                                                    <select>
+                                                        <option>050</option>
+                                                        <option>055</option>
+                                                        <option>070</option>
+                                                        <option>077</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <div class="multiselect">
+                                                <label class="label">Şəhər</label>
+                                                <select class="custom-select-search" data-placeholder="Şəhər seçin">
+                                                    <option></option>
+                                                    <option value="0">Bakı</option>
+                                                    <option value="1">Qax</option>
+                                                    <option value="2">Şəki</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label class="label">Ünvan</label>
+                                                <input name="" class="validate[required]" type="text" placeholder="Çatdırılma ünvanı" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="label">Digər qeydlər</label>
+                                                <textarea placeholder="Kuryer üçün əlavə qeydləriniz"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_item_btm text-end">
+                                    <a href="" class="button btn_secondary_gray">Ləğv et</a>
+                                    <a href="" class="button btn_primary ml-16">Sifariş yarat</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

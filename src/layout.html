@@ -23,53 +23,56 @@
 		<div class="container">
 			<div class="inner">
 				<div class="top_left">
-					<button class="open_mobile_menu"></button>
-					<a href="index.html" class="logo"><img src="images/logo.svg" /></a>
+					<div class="navbar_right mobile_side">
+						<a class="account open_popup" data-target=".account_popup"><img src="images/user.svg"></a>
+						<a href="" class="shopping_cart"></a>
+					</div>
+					<a href="index.html" class="logo hidden_m"><img src="images/logo.svg" /></a>
 					<ul>
 						<li><a href="*9878" title="*9878" class="hot_line">*9878</a></li>
-						<li><a href="">Daşınması qadağan olunan məhsullar</a></li>
-						<li><a href="">Tez-tez verilən suallar</a></li>
+						<li><a href="banned.html">Daşınması qadağan olunan məhsullar</a></li>
+						<li><a href="faq.html">Tez-tez verilən suallar</a></li>
 					</ul>
 				</div>
+				<a href="index.html" class="logo visible_m"><img src="images/logo-m.svg" /></a>
 				<div class="top_right">
 					<ul>
-						<li><a href="login.html" class="log_in">Daxil ol</a></li>
-						<li><a href="register.html" class="sign_in">Qeydiyyat</a></li>
+						<li class="login_wrap"><a href="login.html" class="log_in">Daxil ol</a></li>
+						<li class="signin_wrap"><a href="registration.html" class="sign_in">Qeydiyyat</a></li>
 						<li class="lang">
-							<span><img src="images/az-flag.svg" /><span class="icon"></span></span>
+							<span><img src="images/az-flag.svg" /><span class="icn"></span></span>
 							<ul>
 								<li><a class="hint--left hint--bounce" aria-label="Rusca"><img src="images/ru-flag.svg" /></a></li>
 								<li><a class="hint--left hint--bounce" aria-label="İngiliscə"><img src="images/us-flag.svg" /></a></li>
 							</ul>
 						</li>
 					</ul>
-					<div class="navbar_right mobile_side">
-						<a href="" class="shopping_cart"><span>0</span></a>
-						<a class="account open_popup" data-target=".account_popup"><img src="images/user.svg"></a>
-					</div>
+					<button class="open_mobile_menu"></button>
 				</div>
 			</div>
 		</div>
 	  </div>
-	  <div class="container navbar">
-		  <div class="row">
-			<div class="col-lg-4">
-				<a href="index.html" class="logo"><img src="images/logo.svg" /></a>
+	  <div class="navbar">
+		<div class="container">
+			<div class="row">
+			  <div class="col-lg-4">
+				  <a href="index.html" class="logo"><img src="images/logo.svg" /></a>
+			  </div>
+			  <div class="col-lg-8">
+				  <nav>
+					  <ul>
+						  <li><a href="about.html" title="">Haqqımızda</a></li>
+						  <li><a href="tariffs.html" title="">Tariflər</a></li>
+						  <li><a href="services.html" title="">Xidmətlər</a></li>
+						  <li><a href="markets.html" title="">Mağazalar</a></li>
+						  <li><a href="news.html" title="">Yeniliklər</a></li>
+						  <li><a href="contact.html" title="">Əlaqə</a></li>
+						  <li><a href="basket.html" class="shopping_cart"><span>0</span></a></li>
+					  </ul>
+				  </nav>
+			  </div>
 			</div>
-			<div class="col-lg-8">
-				<nav>
-					<ul>
-						<li><a href="about.html" title="">Haqqımızda</a></li>
-						<li><a href="prices.html" title="">Tariflər</a></li>
-						<li><a href="services.html" title="">Xidmətlər</a></li>
-						<li><a href="contact.html" title="">Mağazalar</a></li>
-						<li><a href="contact.html" title="">Yeniliklər</a></li>
-						<li><a href="contact.html" title="">Əlaqə</a></li>
-						<li><a href="" class="shopping_cart"><span>0</span></a></li>
-					</ul>
-				</nav>
-			</div>
-		  </div>
+		</div>
 	  </div>
 	 </header>
 	 {% block content %}{% endblock %}
@@ -106,27 +109,27 @@
 		<div class="popup_inner">
 			<div class=" container">
 				<div class="header">
+					<a href="" class="logo"><img src="images/logo.svg" /></a>
+					<a href="*9878" title="*9878" class="hot_line o-5">*9878</a>
 					<button class="close"></button>
-					<div class="lang">
-						<span>EN<span class="icon"></span></span>
-						<ul>
-							<li><a href="">AZ</a></li>
-							<li><a href="">RU</a></li>
-						</ul>
-					</div>
 				</div>
 			</div>
 			<nav>
 				<div class="container">
 					<ul class="m_nav">
-						<li> <a href="#" class="m_nav_link">About us</a></li>
-						<li> <a href="#" class="m_nav_link">Prices</a></li>
-						<li> <a href="#" class="m_nav_link">Services</a></li>
-						<li> <a href="#" class="m_nav_link">Contact</a></li>
+						<li> <a href="#" class="m_nav_link">Haqqımızda</a></li>
+						<li> <a href="#" class="m_nav_link">Tariflər</a></li>
+						<li> <a href="#" class="m_nav_link">Xidmətlər</a></li>
+						<li> <a href="#" class="m_nav_link">Mağazalar</a></li>
+						<li> <a href="#" class="m_nav_link">Yeniliklər</a></li>
+						<li> <a href="#" class="m_nav_link">Əlaqə</a></li>
 					</ul>
 					<div class="m_footer">
-						<a href="" class="log_in">LOG IN</a>
-						<a href="" class="button btn_primary sign_in">REGISTER</a>
+						<ul class="lang">
+							<li class="active"><a href="" class=""><img src="images/az-flag.svg" /></a></li>
+							<li><a href="" class=""><img src="images/ru-flag.svg" /></a></li>
+							<li><a href="" class=""><img src="images/us-flag.svg" /></a></li>
+						</ul>
 					</div>
 				</div>
 			</nav>
@@ -134,6 +137,7 @@
 		<div class="bg_overlay"></div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCZWy2YH-P1SUd4wbCz4gteGoX3aXSd1c&amp;amp;libraries=places"></script>
 	<script src="js/vendor.min.js?_t=1615752823548"></script>
 	<script src="js/lang/jquery.validationEngine-en.js"></script>
 	<script src="js/script.min.js?_t=1615752823548"></script>

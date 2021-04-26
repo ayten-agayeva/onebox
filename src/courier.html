@@ -1,0 +1,469 @@
+{% extends "logged-layout.html" %}
+{% block content %}
+<main>
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="side_menu">
+                    <div class="user">
+                        <div class="user_img">
+                            <img src="./images/usr.jpg">
+                        </div>
+                        <div class="user_info">
+                            <span class="title">Bella Hadid</span>
+                            <span class="desc"><span class="user_id">ID: </span>OB386477</span>
+                        </div>
+                    </div>
+                    <a href="" class="button btn_primary full">Bəyan et</a>
+                    <ul>
+                        <li><a href="" title="" class="active">Xaricdəki ünvanlarım</a></li>
+                        <li><a href="" title="">Bağlamalarım</a></li>
+                        <li><a href="" title="">Sifarişlərim</a></li>
+                        <li><a href="" title="">Borclar</a></li>
+                        <li><a href="" title="">Balans</a></li>
+                        <li><a href="" title="">Ailə hesabı</a></li>
+                        <li><a href="" title="">Etibarnamələr</a></li>
+                        <li><a href="" title="">Kuryer sifarişi</a></li>
+                        <li class="settings"><a href="" title="">Ayarlar</a></li>
+                        <li><a href="" title="">Çıxış</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="account_top_fix">
+                    <a href="" class="item limit">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Bu ay üzrə limit</label>
+                            <span class="desc">$ 123.00</span>
+                        </div>
+                    </a>
+                    <a href="" class="item order">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Sifariş balansım</label>
+                            <span class="desc">₺ 4567.89</span>
+                        </div>
+                    </a>
+                    <a href="" class="item transport">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Daşınma balansım</label>
+                            <span class="desc">$ 20.50</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="right_content_wrap">
+                    <div class="sec_title">
+                        <h1>Kuryer sifarişi</h1>
+                        <div class="text-end">
+                            <a href="" class="button btn_primary add_new m-full">Yeni sifariş</a>
+                        </div>
+                    </div>
+                    <div class="right_content">
+                        <div class="tabs_flex mb-32">
+                            <ul class="tabs tabs1" data-target=".list_tab">
+                                <li class="active  b-100"><a class="pt-0 ">Bütün sifarişlər</a></li>
+                                <li class="b-100"><a class="pt-0 ">Yolda</a></li>
+                                <li class="b-100"><a class="pt-0 ">İmtina edilən</a></li>
+                            </ul>
+                        </div>
+                        <div class="list_tab tabs_content">
+                            <div class="active list_content" data-match-height=".item">
+                                <div class="item_block">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama ID</span>
+                                                <div class="text">OB080668</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama sayı</span>
+                                                <a href="#" class="text underline color-red">12</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Sifariş tarixi</span>
+                                                <div class="text">14.03.2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Status</span>
+                                                <div class="text">Yoldadır</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Toplam qiymət</span>
+                                                <div class="text">$19.30</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_btm">
+                                        <div class="btn-group dropright drop_menu">
+                                            <button type="button" class="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <button class="delete_link">Bağlamanı sil</button>
+                                                <a href="#" class="edit">Düzəliş et</a>
+                                                <a href="#" class="download">Yüklə</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn_group">
+                                            <button class="button btn_primary btn-with-sm m-full">Ödə</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item_block">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama ID</span>
+                                                <div class="text">OB080668</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama sayı</span>
+                                                <a href="#" class="text underline color-red">12</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Sifariş tarixi</span>
+                                                <div class="text">14.03.2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Status</span>
+                                                <div class="text info info_red">İmtina edilib<span class="info_icon hint--top hint--bounce" aria-label="Ölçüsü bitib"></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Toplam qiymət</span>
+                                                <div class="text">$19.30</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_btm">
+                                        <div class="btn-group dropright drop_menu">
+                                            <button type="button" class="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <button class="delete_link">Bağlamanı sil</button>
+                                                <a href="#" class="edit">Düzəliş et</a>
+                                                <a href="#" class="download">Yüklə</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn_group">
+                                            <button class="button btn_deactive btn-with-sm m-full">Ödə</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item_block">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama ID</span>
+                                                <div class="text">OB080668</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama sayı</span>
+                                                <a href="#" class="text underline color-red">12</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Sifariş tarixi</span>
+                                                <div class="text">14.03.2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Status</span>
+                                                <div class="text">Yoldadır</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Toplam qiymət</span>
+                                                <div class="text">$19.30</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_btm">
+                                        <div class="btn-group dropright drop_menu">
+                                            <button type="button" class="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <button class="delete_link">Bağlamanı sil</button>
+                                                <a href="#" class="edit">Düzəliş et</a>
+                                                <a href="#" class="download">Yüklə</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn_group">
+                                            <div class="button payed btn-with-sm m-full">Ödənilib</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-match-height=".item" class="list_content">
+                                <div class="item_block">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama ID</span>
+                                                <div class="text">OB080668</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama sayı</span>
+                                                <a href="#" class="text underline color-red">12</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Sifariş tarixi</span>
+                                                <div class="text">14.03.2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Status</span>
+                                                <div class="text">Yoldadır</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Toplam qiymət</span>
+                                                <div class="text">$19.30</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_btm">
+                                        <div class="btn-group dropright drop_menu">
+                                            <button type="button" class="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <button class="delete_link">Bağlamanı sil</button>
+                                                <a href="#" class="edit">Düzəliş et</a>
+                                                <a href="#" class="download">Yüklə</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn_group">
+                                            <button class="button btn_primary btn-with-sm m-full">Ödə</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item_block">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama ID</span>
+                                                <div class="text">OB080668</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama sayı</span>
+                                                <a href="#" class="text underline color-red">12</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Sifariş tarixi</span>
+                                                <div class="text">14.03.2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Status</span>
+                                                <div class="text">Yoldadır</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Toplam qiymət</span>
+                                                <div class="text">$19.30</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_btm">
+                                        <div class="btn-group dropright drop_menu">
+                                            <button type="button" class="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <button class="delete_link">Bağlamanı sil</button>
+                                                <a href="#" class="edit">Düzəliş et</a>
+                                                <a href="#" class="download">Yüklə</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn_group">
+                                            <button class="button btn_primary btn-with-sm m-full">Ödə</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item_block">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama ID</span>
+                                                <div class="text">OB080668</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama sayı</span>
+                                                <a href="#" class="text underline color-red">12</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Sifariş tarixi</span>
+                                                <div class="text">14.03.2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Status</span>
+                                                <div class="text">Yoldadır</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Toplam qiymət</span>
+                                                <div class="text">$19.30</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_btm">
+                                        <div class="btn-group dropright drop_menu">
+                                            <button type="button" class="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <button class="delete_link">Bağlamanı sil</button>
+                                                <a href="#" class="edit">Düzəliş et</a>
+                                                <a href="#" class="download">Yüklə</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn_group">
+                                            <button class="button btn_primary btn-with-sm m-full">Ödə</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-match-height=".item" class="list_content">
+                                <div class="item_block">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama ID</span>
+                                                <div class="text">OB080668</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama sayı</span>
+                                                <a href="#" class="text underline color-red">12</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Sifariş tarixi</span>
+                                                <div class="text">14.03.2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Status</span>
+                                                <div class="text info info_red">İmtina edilib<span class="info_icon hint--top hint--bounce" aria-label="Ölçüsü bitib"></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Toplam qiymət</span>
+                                                <div class="text">$19.30</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_btm">
+                                        <div class="btn-group dropright drop_menu">
+                                            <button type="button" class="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <button class="delete_link">Bağlamanı sil</button>
+                                                <a href="#" class="edit">Düzəliş et</a>
+                                                <a href="#" class="download">Yüklə</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn_group">
+                                            <button class="button btn_deactive btn-with-sm m-full">Ödə</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item_block">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama ID</span>
+                                                <div class="text">OB080668</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Bağlama sayı</span>
+                                                <a href="#" class="text underline color-red">12</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Sifariş tarixi</span>
+                                                <div class="text">14.03.2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                            <div class="item">
+                                                <span class="label o-5">Status</span>
+                                                <div class="text info info_red">İmtina edilib<span class="info_icon hint--top hint--bounce" aria-label="Ölçüsü bitib"></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Toplam qiymət</span>
+                                                <div class="text">$19.30</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_btm">
+                                        <div class="btn-group dropright drop_menu">
+                                            <button type="button" class="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <button class="delete_link">Bağlamanı sil</button>
+                                                <a href="#" class="edit">Düzəliş et</a>
+                                                <a href="#" class="download">Yüklə</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn_group">
+                                            <button class="button btn_deactive btn-with-sm m-full">Ödə</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

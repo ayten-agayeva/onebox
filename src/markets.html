@@ -1,0 +1,514 @@
+{% extends "layout.html" %}
+{% block content %}
+<main class="markets markets_page">
+	<section>
+        <div class="container">
+            <div class="w-100">
+                <div class="sec_title">
+                    <h1>Mağazalar</h1>
+                    <span class="text o-5">Türkiyə mağazalarını sizlərə yaxın etdik. Alış-verişin ən sərfəli ünvanı Onebox Cargo ilə istədiyiniz mağazadan onlayn sifariş edin, biz çatdıraq.</span>
+                </div>
+                <div class="form visible_m">
+                    <div class="input-wrapper">
+                        <label class="label">Ölkəni seçin</label>
+                        <select>
+                            <option>Hamısı</option>
+                            <option>Türkiyə</option>
+                            <option>United States</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="tabs_flex tab_with_label with_label_two markets_tab">
+                    <ul class="tabs tabs1" data-target=".market_list">
+                        <li class="active"><a><span class="tab_title">Hamısı</span></a></li>
+                        <li><a class="tr"><span class="tab_title">Türkiyə</span></a></li>
+                        <li><a class="us"><span class="tab_title">ABŞ</span></a></li>
+                        <li><a class="chine"><span class="tab_title">Çin</span></a></li>
+                    </ul>
+                </div>
+                <div class="market_list tabs_content">
+                    <div class="active list_content" data-match-height=".item">
+                        <div class="tabs_flex tab_with_label slider_tab">
+                            <ul class="slider tabs tabs1" data-target=".list_tab">
+                                <li class="active" data-index="0"><a class="multibrands" ><span class="tab_title">Bütün kateqoriyalar</span></a></li>
+                                <li data-index="1"><a class="clothes"><span class="tab_title">Geyim, ayaqqabı, aksesuar</span></a></li>
+                                <li data-index="2"><a class="car"><span class="tab_title">Avtomobil məhsulları</span></a></li>
+                                <li data-index="3"><a class="kid"><span class="tab_title">Uşaq</span></a></li>
+                                <li data-index="4"><a class="cosmetics"><span class="tab_title">Kosmetika</span></a></li>
+                                <li data-index="5"><a class="kitchen"><span class="tab_title">Mətbəx</span></a></li>
+                                <li data-index="6"><a class="home"><span class="tab_title">Ev üçün</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="list_tab tabs_content">
+                            <div class="active list_content" data-match-height=".item">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store1.png" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store2.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store3.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store4.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store5.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store6.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store7.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store8.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store2.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store4.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store3.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store1.png" alt="" /></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-match-height=".item" class="list_content">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store5.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store6.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store3.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store4.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store5.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store6.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store7.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store8.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store2.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store4.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store3.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store1.png" alt="" /></div>
+                                        </a>
+                                    </div>
+                                </div>	
+                            </div>
+                            <div data-match-height=".item" class="list_content">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store5.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store6.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store3.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store4.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store5.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store6.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store7.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store8.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store2.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store4.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store3.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store1.png" alt="" /></div>
+                                        </a>
+                                    </div>
+                                </div>	
+                            </div>
+                            <div data-match-height=".item" class="list_content">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store5.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store6.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store7.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store8.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store2.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store6.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store7.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store8.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store2.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store4.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store3.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store1.png" alt="" /></div>
+                                        </a>
+                                    </div>
+                                </div>	
+                            </div>
+                            <div data-match-height=".item" class="list_content">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store5.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store6.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store7.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store8.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store2.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store6.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store7.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store8.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store2.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store4.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store3.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store1.png" alt="" /></div>
+                                        </a>
+                                    </div>
+                                </div>	
+                            </div>
+                            <div data-match-height=".item" class="list_content">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store5.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store6.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store7.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store8.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store2.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store6.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store7.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store8.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store2.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store4.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store3.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store1.png" alt="" /></div>
+                                        </a>
+                                    </div>
+                                </div>	
+                            </div>
+                            <div data-match-height=".item" class="list_content">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store5.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store6.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store7.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store8.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store2.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store6.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store7.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store8.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store2.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store4.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store3.svg" alt="" /></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                                        <a href="" class="item">
+                                            <div class="img"><img src="images/store1.png" alt="" /></div>
+                                        </a>
+                                    </div>
+                                </div>	
+                            </div>
+                        </div>
+                    </div>
+                    <div data-match-height=".item" class="list_content">
+                        
+                    </div>
+                    <div data-match-height=".item" class="list_content">
+                        
+                    </div>
+                    <div data-match-height=".item" class="list_content">
+                        
+                    </div>
+                </div>
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link prev disabled" href="#" aria-label="Previous"></a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link next" href="#" aria-label="Next"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,502 @@
+{% extends "logged-layout.html" %}
+{% block content %}
+<main>
+    <section class="container packages">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="side_menu">
+                    <div class="user">
+                        <div class="user_img">
+                            <img src="./images/usr.jpg">
+                        </div>
+                        <div class="user_info">
+                            <span class="title">Bella Hadid</span>
+                            <span class="desc"><span class="user_id">ID: </span>OB386477</span>
+                        </div>
+                    </div>
+                    <a href="" class="button btn_primary full">Bəyan et</a>
+                    <ul>
+                        <li><a href="" title="" class="active">Xaricdəki ünvanlarım</a></li>
+                        <li><a href="" title="">Bağlamalarım</a></li>
+                        <li><a href="" title="">Sifarişlərim</a></li>
+                        <li><a href="" title="">Borclar</a></li>
+                        <li><a href="" title="">Balans</a></li>
+                        <li><a href="" title="">Ailə hesabı</a></li>
+                        <li><a href="" title="">Etibarnamələr</a></li>
+                        <li><a href="" title="">Kuryer sifarişi</a></li>
+                        <li class="settings"><a href="" title="">Ayarlar</a></li>
+                        <li><a href="" title="">Çıxış</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="account_top_fix">
+                    <a href="" class="item limit">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Bu ay üzrə limit</label>
+                            <span class="desc">$ 123.00</span>
+                        </div>
+                    </a>
+                    <a href="" class="item order">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Sifariş balansım</label>
+                            <span class="desc">₺ 4567.89</span>
+                        </div>
+                    </a>
+                    <a href="" class="item transport">
+                        <div class="img"></div>
+                        <div>
+                            <label class="o-5">Daşınma balansım</label>
+                            <span class="desc">$ 20.50</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="right_content_wrap">
+                    <div class="sec_title">
+                        <h1>Bağlamalarım</h1>
+                        <select>
+                            <option>Bütün bağlamalar</option>
+                            <option>Sifariş edilib</option>
+                            <option>Yolda</option>
+                            <option>Digər</option>
+                        </select>
+                    </div>
+                    <div class="right_content">
+                        <div class="item_block">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Mağaza / Ölkə</span>
+                                        <div class="text">Nike</div>
+                                        <span class="note">Türkiyə TM56</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Tracking ID</span>
+                                        <div class="text">TMX3245456</div>
+                                        <span class="note">5930458904599599949</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Status</span>
+                                        <div class="text info info_red">İnvoys
+                                            yüklənməyib<span class="info_icon hint--top hint--bounce" aria-label="Smart Customs-da bəyan olunmayıb"></span></div>
+                                        <span class="note">24.02.2021</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Çəki</span>
+                                        <div class="text info info_dark">5.70 kq<span class="info_icon hint--top hint--bounce" aria-label="(en 12sm, uzunluq 23sm, hündürlük 44sm)"></span></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Çatdırılma</span>
+                                        <div class="text">$16.90</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">İnvoys qiyməti</span>
+                                        <div class="text">$134.90</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_btm">
+                                <div class="btn-group dropup drop_menu">
+                                    <button type="button" class="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <button class="delete_link">Bağlamanı sil</button>
+                                        <a href="#" class="edit">Düzəliş et</a>
+                                        <a href="#" class="download">Yüklə</a>
+                                    </div>
+                                </div>
+                                <div class="btn_group">
+                                    <button class="button btn_secondary_gray open_popup" data-target=".package_details_popup">Ətraflı bax</button>
+                                    <button class="button btn_deactive">Ödə</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_block">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Mağaza / Ölkə</span>
+                                        <div class="text">Nike</div>
+                                        <span class="note">Türkiyə TM56</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Tracking ID</span>
+                                        <div class="text">TMX3245456</div>
+                                        <span class="note">5930458904599599949</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Status</span>
+                                        <div class="text info info_red">İnvoys
+                                            yüklənməyib<span class="info_icon hint--top hint--bounce" aria-label="Smart Customs-da bəyan olunmayıb"></span></div>
+                                        <span class="note">24.02.2021</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Çəki</span>
+                                        <div class="text info info_dark">5.70 kq<span class="info_icon hint--top hint--bounce" aria-label="(en 12sm, uzunluq 23sm, hündürlük 44sm)"></span></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Çatdırılma</span>
+                                        <div class="text">$16.90</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">İnvoys qiyməti</span>
+                                        <div class="text">$134.90</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_btm">
+                                <div class="btn-group dropup drop_menu">
+                                    <button type="button" class="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <button class="delete_link">Bağlamanı sil</button>
+                                        <a href="#" class="edit">Düzəliş et</a>
+                                        <a href="#" class="download">Yüklə</a>
+                                    </div>
+                                </div>
+                                <div class="btn_group">
+                                    <button class="button btn_secondary_gray open_popup" data-target=".package_details_popup">Ətraflı bax</button>
+                                    <button class="button btn_primary">Ödə</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_block">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Mağaza / Ölkə</span>
+                                        <div class="text">Nike</div>
+                                        <span class="note">Türkiyə TM56</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Tracking ID</span>
+                                        <div class="text">TMX3245456</div>
+                                        <span class="note">5930458904599599949</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Status</span>
+                                        <div class="text info info_red">İnvoys
+                                            yüklənməyib<span class="info_icon hint--top hint--bounce" aria-label="Smart Customs-da bəyan olunmayıb"></span></div>
+                                        <span class="note">24.02.2021</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Çəki</span>
+                                        <div class="text info info_dark">5.70 kq<span class="info_icon hint--top hint--bounce" aria-label="(en 12sm, uzunluq 23sm, hündürlük 44sm)"></span></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Çatdırılma</span>
+                                        <div class="text">$16.90</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">İnvoys qiyməti</span>
+                                        <div class="text">$134.90</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_btm">
+                                <div class="btn-group dropup drop_menu">
+                                    <button type="button" class="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <button class="delete_link">Bağlamanı sil</button>
+                                        <a href="#" class="edit">Düzəliş et</a>
+                                        <a href="#" class="download">Yüklə</a>
+                                    </div>
+                                </div>
+                                <div class="btn_group">
+                                    <button class="button btn_secondary_gray open_popup" data-target=".package_details_popup">Ətraflı bax</button>
+                                    <span class="button payed">Ödənilib</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link prev disabled" href="#" aria-label="Previous"></a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link next" href="#" aria-label="Next"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup package_details_popup">
+            <div class="popup_inner popup_md">
+                <button class="close"></button>
+                <h2 class="title">Bağlama məlumatları</h2>
+                <div class="tabs_flex">
+                    <ul class="tabs tabs1" data-target=".list_tab">
+                        <li class="active"><a>Bağlamanın detalları</a></li>
+                        <li><a>Məhsullar</a></li>
+                    </ul>
+                </div>
+                <div class="list_tab tabs_content">
+                    <div class="active list_content" data-match-height=".item">
+                        <div class="item_block">
+                            <div class="row">
+                                <div class="col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Mağaza</span>
+                                        <div class="text">Nike</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Çəki</span>
+                                        <div class="text">5.70 kq</div>
+                                        <span class="note">(en 12sm, uzunluq 23sm, hündürlük 44sm)</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Ölkə</span>
+                                        <div class="text">Türkiyə</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Qiyməti</span>
+                                        <div class="text">₺ 350.00</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Tracking ID</span>
+                                        <div class="text">TMX3245456</div>
+                                        <span class="note">5930458904599599949</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">İnvoys qiyməti</span>
+                                        <div class="text">$ 134.90</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Status</span>
+                                        <div class="text info info_red">İnvoys
+                                            yüklənməyib<span class="info_icon hint--top hint--bounce" aria-label="Smart Customs-da bəyan olunmayıb"></span></div>
+                                        <span class="note">24.02.2021</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Ödəniş statusu</span>
+                                        <span class="payed">Ödənilib</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_btm">
+                                <div class="btn-group dropleft drop_menu">
+                                    <button type="button" class="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <button class="delete_link">Bağlamanı sil</button>
+                                        <a href="#" class="edit">Düzəliş et</a>
+                                        <a href="#" class="download">Yüklə</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-match-height=".item" class="list_content">
+                        <div class="item_block">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Məhsulun qeydi</span>
+                                        <div class="text">2-3 yash, sarı conconlu</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-12">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Məhsulun qiyməti</span>
+                                                <div class="text">₺350.00</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-4 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Kargo qiyməti</span>
+                                                <div class="text">₺9.50</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Sayı</span>
+                                                <div class="text">4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="item">
+                                        <div class="product_link">
+                                            <span class="label o-5">Məhsulun linki</span>
+                                            <a href="#" class="button btn_secondary">https://trendyol.com/trendyol-child/sarı-conconlu-chocuk-132456asdfsaaadaasarı-conconlu-chocuk-132456a</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_block">
+                            <div class="row">
+                                <div class="col-lg-5 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Məhsulun qeydi</span>
+                                        <div class="text">2-3 yash, sarı conconlu</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-12">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Məhsulun qiyməti</span>
+                                                <div class="text">₺350.00</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-4 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Kargo qiyməti</span>
+                                                <div class="text">₺9.50</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Sayı</span>
+                                                <div class="text">4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="item">
+                                        <div class="product_link">
+                                            <span class="label o-5">Məhsulun linki</span>
+                                            <a href="#" class="button btn_secondary">https://trendyol.com/trendyol-child/sarı-conconlu-chocuk-132456asdfsaaadaasarı-conconlu-chocuk-132456a</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_block">
+                            <div class="row">
+                                <div class="col-lg-5 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Məhsulun qeydi</span>
+                                        <div class="text">2-3 yash, sarı conconlu</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-12">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Məhsulun qiyməti</span>
+                                                <div class="text">₺350.00</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-4 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Kargo qiyməti</span>
+                                                <div class="text">₺9.50</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Sayı</span>
+                                                <div class="text">4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="item">
+                                        <div class="product_link">
+                                            <span class="label o-5">Məhsulun linki</span>
+                                            <a href="#" class="button btn_secondary">https://trendyol.com/trendyol-child/sarı-conconlu-chocuk-132456asdfsaaadaasarı-conconlu-chocuk-132456a</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_block">
+                            <div class="row">
+                                <div class="col-lg-5 col-12">
+                                    <div class="item">
+                                        <span class="label o-5">Məhsulun qeydi</span>
+                                        <div class="text">2-3 yash, sarı conconlu</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-12">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Məhsulun qiyməti</span>
+                                                <div class="text">₺350.00</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-4 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Kargo qiyməti</span>
+                                                <div class="text">₺9.50</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                            <div class="item text-end-d">
+                                                <span class="label o-5">Sayı</span>
+                                                <div class="text">4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="item">
+                                        <div class="product_link">
+                                            <span class="label o-5">Məhsulun linki</span>
+                                            <a href="#" class="button btn_secondary">https://trendyol.com/trendyol-child/sarı-conconlu-chocuk-132456asdfsaaadaasarı-conconlu-chocuk-132456a</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
