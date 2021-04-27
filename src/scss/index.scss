@@ -690,8 +690,13 @@ ul {
 				border-bottom: 0 !important;
 				margin-right: 0 !important;
 				a {
+					-webkit-transition: all .3s ease-in-out;
+					transition: all .3s ease-in-out;
 					&.clothes {
 						background: url(../images/clothes.svg) 16px center no-repeat #F7F7F7;
+					}
+					&.music {
+						background: url(../images/music.svg) 16px center no-repeat #F7F7F7;
 					}
 					&.car{
 						background: url(../images/car.svg) 16px center no-repeat #F7F7F7;
@@ -711,12 +716,33 @@ ul {
 					&.home {
 						background: url(../images/home.svg) 16px center no-repeat #F7F7F7;
 					}
+					&.multi {
+						background: url(../images/multi.svg) 16px center no-repeat #F7F7F7;
+					}
+					&.health {
+						background: url(../images/health.svg) 16px center no-repeat #F7F7F7;
+					}
+					&.electronic {
+						background: url(../images/electronic.svg) 16px center no-repeat #F7F7F7;
+					}
+					&.for-home {
+						background: url(../images/for-home.svg) 16px center no-repeat #F7F7F7;
+					}
+					&.ps {
+						background: url(../images/ps.svg) 16px center no-repeat #F7F7F7;
+					}
+					&.book {
+						background: url(../images/book.svg) 16px center no-repeat #F7F7F7;
+					}
 				}
 				&.active {
 					a {
 						color: #C40000;
 						&.clothes {
 							background: url(../images/clothes-a.svg) 16px center no-repeat #F7F7F7;
+						}
+						&.music {
+							background: url(../images/music-a.svg) 16px center no-repeat #F7F7F7;
 						}
 						&.car{
 							background: url(../images/car-a.svg) 16px center no-repeat #F7F7F7;
@@ -727,14 +753,29 @@ ul {
 						&.cosmetics {
 							background: url(../images/cosmetics-a.svg) 16px center no-repeat #F7F7F7;
 						}
-						&.multibrands {
+						&.allcatg {
 							background: url(../images/multibrands-a.svg) 16px center no-repeat #F7F7F7;
-						}
-						&.kitchen {
-							background: url(../images/kitchen-a.svg) 16px center no-repeat #F7F7F7;
 						}
 						&.home {
 							background: url(../images/home-a.svg) 16px center no-repeat #F7F7F7;
+						}
+						&.multi {
+							background: url(../images/multi-a.svg) 16px center no-repeat #F7F7F7;
+						}
+						&.health {
+							background: url(../images/health-a.svg) 16px center no-repeat #F7F7F7;
+						}
+						&.electronic {
+							background: url(../images/electronic-a.svg) 16px center no-repeat #F7F7F7;
+						}
+						&.for-home {
+							background: url(../images/for-home-a.svg) 16px center no-repeat #F7F7F7;
+						}
+						&.ps {
+							background: url(../images/ps-a.svg) 16px center no-repeat #F7F7F7;
+						}
+						&.book {
+							background: url(../images/book-a.svg) 16px center no-repeat #F7F7F7;
 						}
 					}
 				}
@@ -971,7 +1012,7 @@ ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: rem(64) 0 rem(48);
+	padding: rem(40) 0 rem(48);
 	justify-content: center;
 	h1 {
 		font-weight: 700;
@@ -1246,14 +1287,13 @@ ul {
 				margin-top: rem(32);
 			}
 			.sec_title {
-				padding-top: rem(24);
+				padding-top: rem(40);
 			}
 		}
 	}
 }
 
 .news {
-	padding-bottom: rem(56);
 	background-color: #fff;
 	.tns-controls, .tns-nav {
 		display: none !important;
@@ -1372,10 +1412,11 @@ ul {
 		}
 	}
 	.back_link {
-		margin-top: rem(41);
+		padding: rem(40) 0;
 	}
 }
 .news_page {
+	margin-bottom: rem(80);
 	.news {
 		background: transparent;
 		.tabs_content {
@@ -2320,6 +2361,9 @@ main {
 	margin-top: rem(40);
 	@include screen('(max-width: 991px)') {
 		padding: 0;
+	}
+	.sec_title{
+		padding-top: rem(40);
 	}
 }
 .w-50 {
