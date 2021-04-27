@@ -2531,14 +2531,14 @@ main {
 	}
 }
 .package_status {
-	padding: rem(30) 0 rem(16);
+	padding: rem(30) 0 rem(48);
+	
 	.small_title {
 		margin-top: 0;
-		margin-bottom: rem(16) !important;
+		margin-bottom: rem(24) !important;
 	}
 	ul {
 		padding-left: 0;
-		padding-top: rem(20);
 		margin: auto;
 		display: flex;
 		justify-content: center;
@@ -2547,6 +2547,20 @@ main {
 			display: inline-flex;
 			justify-content: center;
 			width: 16.6%;
+			.tracking_check {
+				width: 40px;
+				height: 40px;
+				background: rgba(0, 0, 0, 0.05);
+				border-radius: 50%;
+				margin-bottom: 8px;
+				&::before {
+					content: '';
+					width: 40px;
+					height: 40px;
+					display: block;
+					background: url(../images/tracking-check.svg) center no-repeat;
+				}
+			}
 			&::after {
 				content: "";
 				display: block;
@@ -2581,11 +2595,16 @@ main {
 				margin-top: rem(10);
 				text-align: center;
 				.title {
-					color: #00C466;
+					color: rgba(0, 0, 0, 0.5);
 					min-height: 40px
 				}
 				.date {
 					color: #3333337a;
+				}
+				@include screen('(max-width: 991px)') {
+					.title, .date {
+						display: none;
+					}
 				}
 			}
 			&:first-child {
@@ -2594,12 +2613,42 @@ main {
 				}
 			}
 			&.past {
+				.title {
+					color: #00C466;
+				}
 				&::before {
 					background: #00C466;
     				background-size: 10px;
 				}
 				&::after {
 					border-top: 2px solid #00C466;
+				}
+				.tracking_check {
+					background: rgba(0, 196, 102, 0.05);
+					&::before {
+						background: url(../images/check-past.svg) center no-repeat;
+						@include screen('(max-width: 991px)')  {
+							background-size: 17px;
+						}
+					}
+				}
+			}
+			&.just {
+				@include screen('(max-width: 991px)') {
+					.title, .date {
+						display: block;
+					}
+				}
+			}
+			@include screen('(max-width: 991px)') {
+				.tracking_check {
+					width: 35px;
+					height: 35px;
+					&::before {
+						width: 35px;
+						height: 35px;
+						background-size: 17px;
+					}
 				}
 			}
 		}
@@ -3393,9 +3442,7 @@ footer {
 					background-size: 20px;
 					&::after{
 						background: #000 !important;
-						@include screen('(max-width: 767px)') {
-							left: 80px !important;
-						}
+						left: 80px !important;
 					}
 				}
 			}
