@@ -994,6 +994,7 @@ ul {
 		margin-top: rem(12);
 	}
 	@include screen('(max-width: 991px)') {
+		padding-bottom: rem(24);
 		h1 {
 			font-size: rem(24);
 			text-align: center;
@@ -1154,8 +1155,7 @@ ul {
 .calc {
 	.calc_bg {
 		margin-top: rem(40);
-		padding: rem(48);
-		padding-bottom: rem(80);
+		padding: 0 rem(48) rem(80);
 		border-radius: 8px;
 		box-shadow: 0px 14px 25px rgba(0, 0, 0, 0.02);
 		background: url(../images/calc-bg.svg) top right no-repeat #fff;
@@ -1245,6 +1245,9 @@ ul {
 			.total_price {
 				margin-top: rem(32);
 			}
+			.sec_title {
+				padding-top: rem(24);
+			}
 		}
 	}
 }
@@ -1252,6 +1255,9 @@ ul {
 .news {
 	padding-bottom: rem(56);
 	background-color: #fff;
+	.tns-controls, .tns-nav {
+		display: none !important;
+	}
 	.item {
 		position: relative;
 		display: block;
@@ -3560,6 +3566,18 @@ footer {
 		&.visible_m {
 			position: absolute;
     		right: 0;
+		}
+	}
+}
+.social_paltform {
+	background: #fff;
+	.tns-controls, .tns-nav {
+		display: none !important;
+	}
+	.item {
+		display: block;
+		img {
+			width: 100%;
 		}
 	}
 }

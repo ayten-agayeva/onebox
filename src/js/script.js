@@ -257,6 +257,28 @@ $(document).ready(() => {
 		});
 	}
 
+	if ($(".social_paltform").length > 0) {
+		tns({
+			container: ".social_paltform .slider",
+			controlsText: ["", ""],
+			autoplayButton: false,
+			mouseDrag: true,
+			touch: true,
+			autoWidth:true,
+			responsive: {
+				0: {
+					items: 1.1,
+					gutter: 0,
+				},
+				"992": {
+					items: 4.1,
+					gutter: 0,
+				},
+			},
+		});
+	}
+
+
 	if($('.faq').length){
 		$('.faq .item h3').click(function(){
 		  var item = $(this).parent();
