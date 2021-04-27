@@ -1122,11 +1122,11 @@ ul {
 		}
 		&.select2-results__option--selected {
 			background-color: #F7F7F7 !important;
+			color: #C40000 !important;
 		}
 	}
 }
-.with_check {
-	.select2-dropdown {
+	.select2-results__options[aria-multiselectable="true"] {
 		li {
 			&::before {
 				content: '';
@@ -1146,7 +1146,6 @@ ul {
 			}
 		}
 	}
-}
 .select2-selection__arrow {
 	right: 10px !important;
 	display: flex;
@@ -2531,6 +2530,81 @@ main {
 		}
 	}
 }
+.package_status {
+	padding: rem(30) 0 rem(16);
+	.small_title {
+		margin-top: 0;
+		margin-bottom: rem(16) !important;
+	}
+	ul {
+		padding-left: 0;
+		padding-top: rem(20);
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		li {
+			position: relative;
+			display: inline-flex;
+			justify-content: center;
+			width: 16.6%;
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 100%;
+				bottom: 0;
+				margin-bottom: -24px;
+				right: 50%;
+				z-index: 0;
+				height: 2px;
+				border-top: 2px dashed #E5E5E5;
+			
+			}
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				height: 8px;
+				width: 8px;
+				z-index: 1;
+				background-color: #E5E5E5;
+				margin-bottom: -27px;
+				bottom: 0;
+				border-radius: 50%;
+			}
+			.desc {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				font-weight: 400;
+				font-size: rem(12);
+				margin-top: rem(10);
+				text-align: center;
+				.title {
+					color: #00C466;
+					min-height: 40px
+				}
+				.date {
+					color: #3333337a;
+				}
+			}
+			&:first-child {
+				&::after {
+					display: none;
+				}
+			}
+			&.past {
+				&::before {
+					background: #00C466;
+    				background-size: 10px;
+				}
+				&::after {
+					border-top: 2px solid #00C466;
+				}
+			}
+		}
+	}
+}
 footer {
 	background: #000;
 	.top{
@@ -3834,10 +3908,16 @@ footer {
 			margin-right: 0;
 		}
 	}
-	.dropleft {
+	.item_btm {
 		position: absolute;
-		top: 16px;
+		top: 0;
 		right: 0;
+		margin: 0 !important;
+	}
+	.item_block {
+		border-bottom: 0; 
+		margin-bottom: 0;
+		padding-bottom: 0;
 	}
 }
 .forgot_password_link {

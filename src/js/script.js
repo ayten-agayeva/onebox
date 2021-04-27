@@ -279,8 +279,11 @@ $(document).ready(() => {
 	});
 
 	//datepicker
-	$('.datepicker_h').datetimepicker({format:"DD.MM.YYYY, HH:mm"});
-	
+	$('.datepicker_h').datetimepicker({
+		format: 'DD.MM.YYYY, HH:mm',
+		autoclose: true
+	 });
+
 //invoice
 if($('.fine-uploader-gallery').length>0) 
 {

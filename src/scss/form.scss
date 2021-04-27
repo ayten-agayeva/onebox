@@ -190,6 +190,7 @@
 		font-size: rem(16);
 		border-radius: 0;
 		border: 0;
+		overflow: hidden;
 	} 
 	.select2-selection {
 		height: 48px;
@@ -574,6 +575,7 @@ form {
 }
 .timepicker-picker {
 	.fa-arrow-up, .fa-arrow-down {
+		
 		color: #C40000;
 	}
 	.table-condensed {
