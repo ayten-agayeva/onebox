@@ -602,6 +602,11 @@ ul {
 	.form, .sec_title {
 		max-width: 560px;
 		margin: auto;
+		.d-flex {
+			.button {
+				margin-top: 0 !important;
+			}
+		}
 	}
 }
 .tariffs_page  {
@@ -834,6 +839,8 @@ ul {
 			border-radius: 4px;
 			position: absolute;
 			bottom: 0;
+			-webkit-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
 			&:first-child {
 				-webkit-transform: rotate(-180deg);
 				-ms-transform: rotate(-180deg);
@@ -843,6 +850,9 @@ ul {
 			&:nth-child(2) {
 				right: 0;
 				background: url(../images/slider-btn.svg) center no-repeat #fff;
+			}
+			&:hover {
+				background: url(../images/slider-btn-a.svg) center no-repeat #fff;
 			}
 		}
 		@include screen('(max-width: 991px)') {
@@ -882,15 +892,22 @@ ul {
 		  width: 32px;
 		  margin: 0;
 		  background: url(../images/slider-btn.svg)  center no-repeat #F7F7F7;
+		  
 		}
 		&.prev{
 		  margin-right: 4px;
 		  -webkit-transform: rotate(-180deg);
 		  -ms-transform: rotate(-180deg);
 		  transform: rotate(-180deg);
+			&:hover {
+				background: url(../images/slider-btn-left.svg) center no-repeat #F7F7F7;
+			}
 		}
 		&.next {
 		  margin-left: 4px;
+		  &:hover {
+			background: url(../images/slider-btn-a.svg) center no-repeat #F7F7F7;
+			}
 		}
 		&.disabled {
 			-webkit-transform: rotate(0);
@@ -923,6 +940,9 @@ ul {
 	}
 	.w-100 {
 		padding: 0 rem(16);
+		@include screen('(min-width: 991px)') {
+			padding: 0 rem(32);
+		}
 	}
 }
 .markets_tab {
@@ -1012,7 +1032,7 @@ ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: rem(40) 0 rem(48);
+	padding: rem(80) 0 rem(48);
 	justify-content: center;
 	h1 {
 		font-weight: 700;
@@ -1036,6 +1056,7 @@ ul {
 	}
 	@include screen('(max-width: 991px)') {
 		padding-bottom: rem(24);
+		padding: rem(40) 0 rem(24);
 		h1 {
 			font-size: rem(24);
 			text-align: center;
@@ -1113,6 +1134,11 @@ ul {
 		}
 		@include screen('(max-width: 991px)') {
 			margin-bottom: rem(8);
+			flex-direction: column;
+			>div {
+				padding-left: 0;
+				padding-top: rem(16);
+			}
 		}
 	}
 }
@@ -2140,6 +2166,11 @@ ul {
 main {
 	&.home_page {
 		padding-top: 0;
+		.calc {
+			.calc_bg {
+				padding-bottom: 0 !important;
+			}
+		}
 	}
 	@include screen('mobile') {
 		padding-bottom: 0;
@@ -2737,12 +2768,11 @@ footer {
 					color: #fff;
 					font-weight: 500;
 					font-size: rem(14);
-					-webkit-transition: all .4s ease-in-out;
-					transition: all .4s ease-in-out;
+					-webkit-transition: all .3s ease-in-out;
+					transition: all .3s ease-in-out;
 					&:hover {
-						color: #fff;
+						color: #C40000;
 						text-decoration: none;
-						opacity: .7;
 					}
 				}
 			}
@@ -2794,8 +2824,10 @@ footer {
 				color: #fff;
 				font-weight: 500;
 				font-size: rem(14);
+				-webkit-transition: all .3s ease-in-out;
+				transition: all .3s ease-in-out;
 				&:hover {
-					opacity: .7;
+					color: #C40000;
 				}
 			}
 		}
@@ -2826,8 +2858,10 @@ footer {
 		a {
 			display: inline-block;
 			color: #fff;
+			-webkit-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
 			&:hover {
-				opacity: .7;
+				color: #C40000;
 			}
 		}
 	}
@@ -2980,8 +3014,8 @@ footer {
 		background-color: #fff;
 		padding: 0 rem(15);
 		height: rem(96);
-		min-width: rem(270);
-		max-width: rem(270);
+		min-width: 32%;
+		max-width: 32%;
 		display: flex;
 		align-items: center;
 		box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.02);
@@ -3028,6 +3062,8 @@ footer {
 		.item {
 			margin-top: rem(32);
 			margin-right: 8px;
+			min-width: rem(270);
+			max-width: rem(270);
 			label {
 				font-size: rem(14);
 			}
@@ -3071,7 +3107,7 @@ footer {
 					width: 64px;
 					height: 48px;
 					margin-right: rem(8);
-					margin-left: -22px;
+					margin-left: -23px;
 					border-top-right-radius: rem(8);
 					border-bottom-right-radius: rem(8);
 					-webkit-transition: all .4s ease-in-out;

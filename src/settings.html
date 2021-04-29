@@ -59,7 +59,7 @@
                     </div>
                     <div class="right_content">
                         <div class="form">
-                            <form>
+                            <form method="post" class="validation" action="">
                                 <div class="settings_user">
                                     <div class="info">
                                         <span class="label o-5">Müştəri</span>
@@ -103,7 +103,7 @@
                                     <div class="col-12 col-lg-6">
                                         <div class="form-group">
                                             <label class="label">Doğum tarixi</label>
-                                            <input name="" class="validate[required],minSize[6]] datepicker_h"  autocomplete="off" type="text" placeholder="Doğum tarixinizi seçin" data-toggle="datetimepicker" />
+                                            <input name="" class="datepicker_h"  autocomplete="off" type="text" placeholder="Doğum tarixinizi seçin" data-toggle="datetimepicker" />
                                             <span class="calendar"></span>
                                         </div>
                                     </div>
@@ -214,5 +214,18 @@
             </div>
         </div>
     </section>
+    <div class="popup fin_popup">
+        <div class="popup_inner popup_sm">
+            <button class="close"></button>
+            <div class="row content">
+                <div class="col-12 col-lg-6">
+                    <img src="images/old-passport.png" />
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="images/new-passport.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 {% endblock %}

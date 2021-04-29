@@ -149,7 +149,7 @@
 		height: rem(48) !important;
 		color: #000;
 		border: 1px solid #F7F7F7;
-		background-color: #F7F7F7;
+		background-color: #F7F7F7 !important;
 		font-size: rem(16);
 		font-weight: 500;
 		border-radius: 4px;
@@ -159,7 +159,7 @@
 		}
 		&.error {
 			border-color: #ef4a36;
-			background-color: #F7F7F7;
+			background-color: #F7F7F7 !important;
 			@include placeholder {
 				color: #ef4a36;
 			}
